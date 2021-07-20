@@ -1,0 +1,89 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.5rem;
+    line-height: 2;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+header {
+    background-color: black;
+}
+
+.barra a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 95%;
+    align-items: center;
+}
+
+nav a:hover {
+    margin: 0;
+    color: red;
+    text-align: center;
+}
+
+@media(min-width:768px) {
+    nav {
+        flex-direction: row;
+    }
+}
+
+
+/** HERO**/
+
+.hero {
+    height: 20rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    height: 20rem;
+    width: 100%;
+    background-color: rgba(36, 36, 36, 0.4);
+}
+
+.hero h1 {
+    position: relative;
+    color: #f3eded;
+    text-align: center;
+    padding-top: 5rem;
+    text-decoration: overline underline;
+}
+
+.hero p {
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#doc {
+    color: red;
+    text-transform: uppercase;
+}
